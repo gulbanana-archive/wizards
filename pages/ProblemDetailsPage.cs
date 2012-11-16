@@ -9,5 +9,6 @@ namespace wizards
     class ProblemDetailsPage : IPageModel
     {
         public string Title { get { return "Problem Details"; } }
+        public string Details { get; set; }
     }
 }

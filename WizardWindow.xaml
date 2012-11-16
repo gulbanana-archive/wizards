@@ -2,7 +2,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="{Binding Title}" Height="480" Width="640">
-    <Grid>
+    <Grid Margin="0">
+        <ContentControl Content="{Binding Page}" Width="640" Height="400" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="top"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="10,418,0,0" VerticalAlignment="Top" Width="75" Command="{Binding BackCommand}"/>
         <Button Content="{Binding ForwardOrDone}" HorizontalAlignment="Left" Margin="547,418,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ForwardCommand}"/>
         <Label Content="{Binding Status}" HorizontalContentAlignment="Center" Margin="90,416,90,0" VerticalAlignment="Top" Width="452"/>

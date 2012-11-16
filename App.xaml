@@ -1,8 +1,27 @@
 ﻿<Application x:Class="wizards.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:wizards"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <DataTemplate DataType="{x:Type local:UserDetailsPage}">
+            <local:UserDetailsView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type local:ProblemDetailsPage}">
+            <local:ProblemDetailsView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type local:SummaryPage}">
+            <local:SummaryView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type local:CalculationPage}">
+            <local:CalculationView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type local:ResultPage}">
+            <local:ResultView />
+        </DataTemplate>
     </Application.Resources>
 </Application>

@@ -9,5 +9,6 @@ namespace wizards
     class UserDetailsPage : IPageModel
     {
         public string Title { get { return "User Details"; } }
+        public string Username { get; set; }
     }
 }

@@ -68,6 +68,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="pages\CalculationView.xaml.cs">
+      <DependentUpon>CalculationView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IPageModel.cs" />
     <Compile Include="Pages.cs" />
     <Compile Include="pages\CalculationPage.cs" />
@@ -75,6 +78,15 @@
     <Compile Include="pages\ResultPage.cs" />
     <Compile Include="pages\SummaryPage.cs" />
     <Compile Include="pages\UserDetailsPage.cs" />
+    <Compile Include="pages\SummaryView.xaml.cs">
+      <DependentUpon>SummaryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ResultView.xaml.cs">
+      <DependentUpon>ResultView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\ProblemDetailsView.xaml.cs">
+      <DependentUpon>ProblemDetailsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Wizard.cs" />
     <Compile Include="WizardModel.cs" />
     <Compile Include="wizards\CalculationWizard.cs" />
@@ -82,6 +94,10 @@
       <DependentUpon>WizardWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="wizards\ProblemReportWizard.cs" />
+    <Page Include="pages\CalculationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,6 +110,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="pages\UserDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\SummaryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\ResultView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\ProblemDetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WizardWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
