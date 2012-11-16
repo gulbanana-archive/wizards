@@ -1,0 +1,11 @@
+﻿<Window x:Class="wizards.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wizard Maker" SizeToContent="WidthAndHeight" Closed="Window_Closed">
+    <Grid>
+        <StackPanel>
+            <Button Content="Report Wizard" HorizontalAlignment="Center" Margin="10,10,10,0" Click="Report_Click" />
+            <Button Content="Calc Wizard" HorizontalAlignment="Center" Margin="10,10,10,10" Click="Calc_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
